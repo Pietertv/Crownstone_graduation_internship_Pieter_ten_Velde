@@ -9,7 +9,11 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{enumitem}
 
+
+%\usepackage{xcolor}
 \title{Router hardware| Plan of approach}
 \author{Pieter ten Velde}
 \date{September 2022}
@@ -24,7 +28,7 @@
 \setlength{\headheight}{15pt}
 
 \begin{document}
-
+\setlist{nolistsep,leftmargin=*}
 \maketitle
 \newpage
 \tableofcontents
@@ -50,8 +54,6 @@
 \section{Project boundaries}
 \input{sections/projectgrenzen.tex}
 
-
-\newpage
 \section{intermediate results}
 \input{sections/tussenresultaten.tex}
 
@@ -61,16 +63,15 @@
 \input{sections/kwaliteit.tex}
 
 
-%\begin{landscape}
-%\includepdf[pages={3},angle=90]{planning.pdf}
-%\end{landscape}
-
-
 \section{Costs and benefits}
 \input{sections/kosten_en_baten.tex}
 
 
 \input{sections/risicoanalyse}
+\newpage
 
+\begin{landscape}
+\includepdf[pages={1},angle=90]{Planning_POA.pdf}
+\end{landscape}
 
 \end{document}
