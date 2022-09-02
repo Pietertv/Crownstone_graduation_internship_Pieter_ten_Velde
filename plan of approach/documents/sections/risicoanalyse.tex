@@ -1,0 +1,111 @@
+\newpage
+%alle risico's onder elkaar
+%\begin{landscape} 
+
+%\vspace*{-4cm}
+\thispagestyle{empty}
+\section{risk analysis}
+%\begin{center}
+
+\newcounter{riskTableCounter}
+\setcounter{riskTableCounter}{1}
+%\hspace*{-1.8cm}
+%\vspace*{-4.5cm}
+
+\begin{longtable}{| c | p{3cm} | p{3cm} | p{4cm} | c | c | p{3cm} |}
+    %%%% titles
+    \hline
+     & \textbf{Risk} & \textbf{Consequence} & \textbf{Solution} & \textbf{Impact} & \textbf{Chance} & \textbf{Notes} \\
+    & & & & \textbf{[1-5]} & \textbf{[1-5]} & \\\hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    Covid-19 comes back and the Netherlands will go in lockdown again.& Everybody can't go outside anymore which means the necessary equipment for testing is unavailable. & 
+    Try to do as much as possible remotely &
+    3 &
+    1 &
+    A lot of this project can be done remotely. The only problem would be the testing. Even if there is a lockdown there is a big chance the office is still open. 
+    \\ \hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    The PCB doesn't work, because of a hardware mistake&
+    The hardware wont work which will cost time and money&
+    It has to be tested again on a breadboard until it works and then the PCB will be changed accordingly. &
+    2&
+    3&
+    There is a chance this will happen and it will depend on the mistake what the impact will be, however there is a high chance it will not be a big issue.
+    \\\hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    I get severely ill & 
+    I wont be able to work because of the illness &
+    Getting more time for the project or someone else will take over, this means clear documentation so it can be taken over easily &
+    5 &
+    1 &
+    This will probably not happen and documentation will be ready if this is the case anayway.
+    \\ \hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    The laptop on which progress is made malfunctions or erases all files&
+    All the work could be lost that was done offline. &
+    Make sure the necessary files are stored somewhere else as backup& 
+    3&
+    2&
+    Its not that big a problem because the documentation will be done online. The important things that can be lost will be Altium files so a git for that will be created.
+    \\ \hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    Running behind the schedule&
+    The product will not be able to be done on time&
+    Hold strictly to the planning and if it changes talk about it.&
+    3&
+    2&
+    
+    \\ \hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    Change in plans&
+    The Job gets changed&
+    If it is manageable try to keep the changes in mind, if not finish the original job&
+    4&
+    1&
+    This is very unlikely and it depends on the situation. 
+    \\ \hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    Problems in shipping of hardware&
+    The necessary components wont arrive&
+    Try alternatives or simulate as much as possible if the alternatives aren't available either&
+    3&
+    3&
+    There has been a component shortage because of China. This could mess up the project quite a lot.
+    \\ \hline
+    %%%% ITEM SETUP
+    \theriskTableCounter{} &
+    \stepcounter{riskTableCounter}
+    % contents
+    Not enough communication with the client&
+    Misunderstandings could happen or the progress of the project will not be correctly conveyed&
+    Talk at least once per week with the client if possible&
+    3&
+    1&
+    \\ \hline
+    \caption{risk analysis}
+    \label{tab:risico_analyse}
+\end{longtable}
+
+
+\newpage
