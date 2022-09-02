@@ -1,0 +1,68 @@
+\usepackage[dutch]{babel}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{nameref}
+\usepackage{xstring}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{todonotes}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage{eurosym}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\bibliographystyle{unsrt}
+
+\usepackage[a4paper,footskip=10mm,
+	left=30mm,right=30mm,
+	top=30mm,bottom=30mm]{geometry}
+	
+\usepackage{xcolor}
+	\definecolor{primary}{HTML}{000050}
+	\definecolor{secondairy}{HTML}{227ca4}
+	\definecolor{tertiary}{HTML}{ff0000}
+	\definecolor{darkgray}{HTML}{666666}
+	
+\usepackage[tracking=true]{microtype}
+
+\usepackage{titlesec}
+    \titleformat{\chapter}[display]
+	    {\color{primary}\vspace{-10mm}\bf\filcenter{\normalfont\Large}}
+	    {\filcenter{\MakeUppercase{\textls[400]{\chaptertitlename}}\ \thechapter}}
+	    {10pt}{\huge}
+	\titleformat{\section}
+		{\bf\color{primary}\Large}
+		{\color{secondairy}\thesection}{10pt}{}
+	\titleformat{\subsection}
+		{\bf\color{primary}\large}
+		{\color{secondairy} \thesubsection}{10pt}{}
+	\titleformat{\subsubsection}
+		{\bf\color{primary}\large}
+		{\thesubsubsection}{5pt}{}
+	\titleformat{\paragraph}[runin]
+		{\bf\color{primary}}
+		{}{0em}{}
+	\titleformat{\subparagraph}[runin]
+		{\bf\color{primary}}
+		{}{0em}{}
+		
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+	\renewcommand{\headrulewidth}{0pt}
+	\lhead{\bf\emph{\color{secondairy}\leftmark}}
+	\rhead{\bf\emph{
+		\color{secondairy} Pagina \thepage\ van \pageref{LastPage}}}
+
+\usepackage[colorlinks=true,
+	linkcolor=secondairy,
+	citecolor=tertiary,
+	filecolor=tertiary,
+	urlcolor=tertiary]{hyperref}

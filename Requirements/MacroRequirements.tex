@@ -1,0 +1,33 @@
+% Create new requirements
+\newcommand{\newRequirement}[3]{
+    % Params: Number, MoSCoW, Description
+    \subparagraph{REQ#1[#2]}
+    \label{req:REQ#1}
+    
+    \StrSubstitute{#1}{.}{}[\temp]
+    %\newcommand{\temp}{#3}
+    
+    \def \reqstring {#3}
+    
+    \hfill\begin{minipage}{0.8\linewidth}
+        #3
+        %\reqstring
+    \end{minipage}
+}
+
+% Create new Non Functional requirements
+\newcommand{\newNFRequirement}[3]{
+    % Params: Number, MoSCoW, Description
+
+    \subparagraph{NFREQ#1[#2]}
+    \label{req:NFREQ#1}
+    \hfill\begin{minipage}{0.8\linewidth}
+        #3
+    \end{minipage}
+}
+
+% Reference to a requirement. 
+\newcommand{\reqRef}[1]{
+    %#1: requirement number
+    \nameref{req:#1}
+}

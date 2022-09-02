@@ -1,0 +1,32 @@
+
+% Color DarkGreen
+\definecolor{DarkGreen}{HTML}{00aa00} 
+
+%Check boxes
+\newcommand{\vink}{\color{DarkGreen}\cmark}
+\newcommand{\testSuccessful}[1]{
+    \ifthenelse{\equal{#1}{true}}{
+        $\text{\rlap{\color{DarkGreen}\cmark}}\square$
+    }{}
+    \ifthenelse{\equal{#1}{false}}{
+        $\text{\rlap{\color{red} \xmark}}\square$
+    }{}
+}
+
+% Other styling commands:
+\newcommand{\titleitem}[2]{
+    \vspace{5mm}
+    \large{\emph{\color{darkgray}{#1}}}:\\
+    \vspace{1mm}
+    \large{#2}
+}
+\newcommand{\doublerulewide}[1][.2pt]{
+    \makebox[0pt][l]{\rule[.7ex]{14.5cm}{0.7pt}}
+    \hspace{-2.3mm}
+    \rule[.3ex]{14.5cm}{.2pt}
+}
+\newcommand{\doublerulesmall}[1][.2pt]{
+    \makebox[0pt][l]{\rule[.7ex]{14.5cm}{.2pt}}
+    \hspace{-2.3mm}
+    \rule[.3ex]{14.5cm}{.7pt}
+}
