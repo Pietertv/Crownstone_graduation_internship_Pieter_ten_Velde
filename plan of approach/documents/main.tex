@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{enumitem}
+
+
+%\usepackage{xcolor}
+\title{Router hardware| Plan of approach}
+\author{Pieter ten Velde}
+\date{September 2022}
+
+%Page style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Plan of approach}
+\rhead{Router}
+\rfoot{Page \thepage}
+\lfoot{\today}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\setlist{nolistsep,leftmargin=*}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\newpage
+\section{Project results}
+\subsection{Background}
+\input{sections/achtergrond}
+\subsection{Issue}
+\label{subsub:probleemstelling}
+\input{sections/probleemstelling}
+
+\subsection{Objective}
+\input{sections/doelstelling}
+
+\newpage
+\section{Project activities}
+\input{sections/projectactiviteiten.tex}
+
+
+\newpage
+\section{Project boundaries}
+\input{sections/projectgrenzen.tex}
+
+\section{intermediate results}
+\input{sections/tussenresultaten.tex}
+
+
+\newpage
+\section{Quality}
+\input{sections/kwaliteit.tex}
+
+
+\section{Costs and benefits}
+\input{sections/kosten_en_baten.tex}
+
+
+\input{sections/risicoanalyse}
+\newpage
+
+\begin{landscape}
+\includepdf[pages={1},angle=90]{Planning_POA.pdf}
+\end{landscape}
+
+\end{document}
