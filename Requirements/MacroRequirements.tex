@@ -29,3 +29,23 @@
     %#1: requirement number
     \nameref{req:#1}
 }
+%Acceptance testing
+\newcounter{acceptanceTestCounter}
+\newcommand{\newAcceptanceTest}[6]{
+    % Params: #1: Requirement(s), #2: Conditions, #3: Test Input, #4: Test output, #5: criteria, #6: test procedure, #7: Test succesful, #8: Notes
+    \stepcounter{acceptanceTestCounter}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|p{0.8\linewidth}|}
+            \hline
+            \bf Requirement(s) & #1 \\\hline
+            \bf Voorwaarden    & #2 \\\hline
+            \bf Test invoer    & #3 \\\hline
+            \bf Testuitvoering & #4 \\\hline
+            \bf Criteria       & #5 \\\hline
+            \bf Testprocedure  & #6 \\\hline
+            % \bf Test geslaagd  & \testSuccessful{#7} #8 \\\hline
+        \end{tabular}
+        \caption{Acceptatie test case \arabic{acceptanceTestCounter}}
+    \end{table}
+}

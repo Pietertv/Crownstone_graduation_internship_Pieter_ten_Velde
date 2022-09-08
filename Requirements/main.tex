@@ -1,13 +1,20 @@
-\documentclass{article}
+\documentclass[openany]{article}
 \include{settings}
 \begin{document}
 \include{macro}
 \include{MacroRequirements}
 \include{titlepage}
 
+\tableofcontents
+\newpage
+
 \section{Introduction}
-\section{Requirements}
-\include{sections/Requirements}
+\input{sections/Intro}
+\newpage
+
+\section{Definition phase}
+\input{sections/Requirements}
+
 
 
 \end{document}
