@@ -1,0 +1,56 @@
+\section{DCD}
+A data context diagram is used in order to figure out more of the requirements asked by the client. The data context diagram is made with the rules of Yourdon. The DCD is included in \autoref{fig:DCD}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{Images/Definition phase/DCD.drawio.png}
+    \caption{DCD}
+    \label{fig:DCD}
+\end{figure}
+
+\newpage
+\section{Requirements}
+In this chapter the Requirements will be listed. For the requirements the MoSCoW method is used. The MoSCoW method makes use of priority. In \autoref{tab:moscow_abbreviations} the abbreviations are listed.
+
+\begin{table}[H]
+\centering
+    \begin{tabular}{l p{8cm}}
+        \textbf{Abbreviation} & \textbf{Meaning} \\
+        MH & Must Have | This requirement must be developed and has to work in the end product\\
+        & \\
+        SH & Should Have | It isn't mandatory to make, but it would be preferred if it is developed\\
+        & \\
+        CH & Could Have | It isn't mandatory, but if there is time, it will be developed\\
+        & \\
+        WH & Won't Have |isn't necessary\\
+    \end{tabular}
+    \caption{MoSCoW abbreviations}
+    \label{tab:moscow_abbreviations}
+\end{table}
+
+The requirements will be listed in the format listed below.\\
+
+\newRequirement{Number}{MoSCoW priority}{\emph{explanation}}
+
+
+\subsection{Wireless/modular}
+%opties hiervoor
+\input{sections/Definition_fase/Modular}
+
+\subsection{Connections}
+\input{sections/Definition_fase/Connections}
+
+\subsection{User interface}
+\input{sections/Definition_fase/User_interface}
+
+\subsection{Supply/transformer}
+\input{sections/Definition_fase/Transformer}
+
+\subsection{Transformation}
+\input{sections/Definition_fase/Storage}
+
+\input{sections/Definition_fase/Non-functional}
+
+\section{Acceptance test}
+\input{sections/Definition_fase/Acceptance_tests}
+
