@@ -26,7 +26,8 @@
 	\definecolor{secondairy}{HTML}{227ca4}
 	\definecolor{tertiary}{HTML}{ff0000}
 	\definecolor{darkgray}{HTML}{666666}
-\usepackage[tracking=true]{microtype}
+%\usepackage[tracking=true]{microtype}
+\usepackage[nopatch=eqnum]{microtype}
 \usepackage{titlesec}
     \titleformat{\chapter}[display]
 	    {\color{primary}\vspace{-10mm}\bf\filcenter{\normalfont\Large}}
@@ -58,3 +59,5 @@
 	citecolor=tertiary,
 	filecolor=tertiary,
 	urlcolor=tertiary]{hyperref}
+
+\usepackage{biblatex}

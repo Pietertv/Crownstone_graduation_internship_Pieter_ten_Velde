@@ -1,20 +1,31 @@
-\documentclass[openany]{article}
-\include{settings}
+\documentclass{report}
+
+\input{settings}
+\input{macro}
+\addbibresource{sample.bib}
+
 \begin{document}
-\include{macro}
-\include{MacroRequirements}
-\include{titlepage}
+\input{MacroRequirements}
+\input{titlepage}
 
 \tableofcontents
 \newpage
 
-\section{Introduction}
+\chapter{Introduction}
 \input{sections/Intro}
 \newpage
 
-\section{Definition phase}
+\chapter{Definition phase}
 \input{sections/Requirements}
 
+\newpage
+\chapter{Research}
+\input{Research/main_research}
 
+\newpage
+\printbibliography
+
+\newpage
+\input{links}
 
 \end{document}
