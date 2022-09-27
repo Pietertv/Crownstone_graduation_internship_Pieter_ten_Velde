@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" modified="2022-09-16T12:30:52.354Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="bYFer02PioPwyb_6Ivkl" version="20.3.0" type="github" pages="2">
+  <diagram id="SPoGRJfIo3nXrWjkhOdd" name="DCD">
+    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7IUleXDW4cabAlwI7-a3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7IUleXDW4cabAlwI7-a3-1" target="7IUleXDW4cabAlwI7-a3-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7IUleXDW4cabAlwI7-a3-7" value="&lt;b&gt;DATA&lt;/b&gt;&lt;br&gt;-WiFi&amp;nbsp;&lt;br&gt;Bluetooth&lt;br&gt;-Ethernet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7IUleXDW4cabAlwI7-a3-6" vertex="1" connectable="0">
+          <mxGeometry x="0.2182" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7IUleXDW4cabAlwI7-a3-1" target="LI1ZWbjkkbRP-smUm5Fb-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="420" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-4" value="&lt;b&gt;Commands&lt;br&gt;&lt;/b&gt;-Ethernet&lt;br&gt;-WiFi&lt;br&gt;-Bluetooth&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LI1ZWbjkkbRP-smUm5Fb-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.1541" y="-1" relative="1" as="geometry">
+            <mxPoint x="-4" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7IUleXDW4cabAlwI7-a3-1" target="LI1ZWbjkkbRP-smUm5Fb-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-13" value="&lt;b&gt;Data&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LI1ZWbjkkbRP-smUm5Fb-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.2359" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IUleXDW4cabAlwI7-a3-1" value="Modular router" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="357" y="330" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kJUu2zwSgjsIc3CQlZ3C-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7IUleXDW4cabAlwI7-a3-2" target="7IUleXDW4cabAlwI7-a3-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kJUu2zwSgjsIc3CQlZ3C-3" value="&lt;b&gt;2x Button&lt;/b&gt;&lt;br&gt;-On/off&lt;br&gt;-Reset" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kJUu2zwSgjsIc3CQlZ3C-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.3491" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kJUu2zwSgjsIc3CQlZ3C-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.845;entryY=0.091;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="7IUleXDW4cabAlwI7-a3-2" target="7IUleXDW4cabAlwI7-a3-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kJUu2zwSgjsIc3CQlZ3C-4" value="&lt;b&gt;Analog&lt;br&gt;&lt;/b&gt;-LED&lt;br&gt;-audio" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kJUu2zwSgjsIc3CQlZ3C-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.2642" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IUleXDW4cabAlwI7-a3-2" value="User" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="289" y="140" width="246" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7IUleXDW4cabAlwI7-a3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7IUleXDW4cabAlwI7-a3-3" target="7IUleXDW4cabAlwI7-a3-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7IUleXDW4cabAlwI7-a3-5" value="&lt;b&gt;USB adapter&lt;/b&gt;&lt;br&gt;-Power" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7IUleXDW4cabAlwI7-a3-4" vertex="1" connectable="0">
+          <mxGeometry x="0.2545" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IUleXDW4cabAlwI7-a3-3" value="Extarnal Supply" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="294" y="550" width="236" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.933;entryY=0.256;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="LI1ZWbjkkbRP-smUm5Fb-1" target="7IUleXDW4cabAlwI7-a3-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-7" value="&lt;b&gt;Data&lt;br&gt;&lt;/b&gt;-Ethernet&lt;br&gt;-WiFi&lt;br&gt;-Bluetooth" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="LI1ZWbjkkbRP-smUm5Fb-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.5239" y="-1" relative="1" as="geometry">
+            <mxPoint x="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-1" value="Other devices" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="355" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LI1ZWbjkkbRP-smUm5Fb-11" value="External storage" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="355" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-DNAk5d4yID3ze5oF7kJ" name="Page-2">
+    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OMcvGehCsrO_ec9atjJm-6" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="50" y="40" width="700.12" height="499.7039694656489" as="geometry" />
+        </mxCell>
+        <mxCell id="OMcvGehCsrO_ec9atjJm-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://raw.githubusercontent.com/AchimPieters/esp32-homekit-camera/master/Images/ESP32-VROOM-32D-PINOUT.png;clipPath=inset(0% 0% 0% 12.67%);" vertex="1" parent="OMcvGehCsrO_ec9atjJm-6">
+          <mxGeometry width="700.12" height="499.70396946564887" as="geometry" />
+        </mxCell>
+        <mxCell id="OMcvGehCsrO_ec9atjJm-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://raw.githubusercontent.com/AchimPieters/esp32-homekit-camera/master/Images/ESP32-VROOM-32D-PINOUT.png;clipPath=inset(6.68% 89.33% 71.39% 0%);" vertex="1" parent="OMcvGehCsrO_ec9atjJm-6">
+          <mxGeometry x="510.12" y="255" width="117.09" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="OMcvGehCsrO_ec9atjJm-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://raw.githubusercontent.com/AchimPieters/esp32-homekit-camera/master/Images/ESP32-VROOM-32D-PINOUT.png;clipPath=inset(28.61% 89.33% 53.74% 0%);" vertex="1" parent="OMcvGehCsrO_ec9atjJm-6">
+          <mxGeometry x="80.12" y="265" width="126.06" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
