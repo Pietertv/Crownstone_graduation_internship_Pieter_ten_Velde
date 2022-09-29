@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-16T12:30:52.354Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="bYFer02PioPwyb_6Ivkl" version="20.3.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-09-29T10:55:07.497Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="023EWLbQ9rEmId3avDNH" version="20.3.6" type="github" pages="2">
   <diagram id="SPoGRJfIo3nXrWjkhOdd" name="DCD">
-    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="788" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -73,10 +73,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LI1ZWbjkkbRP-smUm5Fb-1" value="Other devices" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="650" y="355" width="120" height="60" as="geometry" />
+          <mxGeometry x="600" y="355" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LI1ZWbjkkbRP-smUm5Fb-11" value="External storage" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="355" width="120" height="60" as="geometry" />
+          <mxGeometry x="140" y="355" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
