@@ -1,12 +1,11 @@
 
 % Color DarkGreen
-\definecolor{DarkGreen}{HTML}{00aa00} 
 
 %Check boxes
-\newcommand{\vink}{\color{DarkGreen}\cmark}
+\newcommand{\vink}{\color{applegreen}\checkmark}
 \newcommand{\testSuccessful}[1]{
-    \ifthenelse{\equal{#1}{true}}{
-        $\text{\rlap{\color{DarkGreen}\cmark}}\square$
+    \ifthenelse{\equal{#1}{applegreen}}{
+        $\text{\rlap{\color{green}\cmark}}\square$
     }{}
     \ifthenelse{\equal{#1}{false}}{
         $\text{\rlap{\color{red} \xmark}}\square$
