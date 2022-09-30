@@ -1,0 +1,36 @@
+
+% Color DarkGreen
+
+%Check boxes
+\newcommand{\vink}{\color{applegreen}\checkmark}
+\newcommand{\testSuccessful}[1]{
+    \ifthenelse{\equal{#1}{applegreen}}{
+        $\text{\rlap{\color{green}\cmark}}\square$
+    }{}
+    \ifthenelse{\equal{#1}{false}}{
+        $\text{\rlap{\color{red} \xmark}}\square$
+    }{}
+}
+% Other styling commands:
+\newcommand{\titleitem}[2]{
+    \vspace{5mm}
+    \large{\emph{\color{darkgray}{#1}}}:\\
+    \vspace{1mm}
+    \large{#2}
+}
+\newcommand{\doublerulewide}[1][.2pt]{
+    \makebox[0pt][l]{\rule[.7ex]{14.5cm}{0.7pt}}
+    \hspace{-2.3mm}
+    \rule[.3ex]{14.5cm}{.2pt}
+}
+\newcommand{\doublerulesmall}[1][.2pt]{
+    \makebox[0pt][l]{\rule[.7ex]{14.5cm}{.2pt}}
+    \hspace{-2.3mm}
+    \rule[.3ex]{14.5cm}{.7pt}
+}
+
+%\let\period.
+%\catcode`\.\active 
+%\def\uppercasesingleletter#1{\uppercase{#1}}
+%\def.{\period\afterassignment\periodx\let\next= }
+%\def \periodx{\ifcat\space\next \next\expandafter\uppercasesingleletter \else\expandafter\next\fi}

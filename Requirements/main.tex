@@ -1,0 +1,34 @@
+\documentclass{report}
+
+\input{settings}
+\input{macro}
+\addbibresource{sample.bib}
+
+\begin{document}
+\input{MacroRequirements}
+\input{sections/Architecture/macro_architecture}
+\input{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter{Introduction}
+\input{sections/Intro}
+\newpage
+
+\chapter{Definition phase}
+
+\input{sections/Requirements}
+
+\chapter{Architecture phase}
+\input{sections/Architecture/main_architecture}
+
+\newpage
+\chapter{Research}
+\input{Research/main_research}
+\newpage
+\printbibliography
+
+\newpage
+
+\end{document}
