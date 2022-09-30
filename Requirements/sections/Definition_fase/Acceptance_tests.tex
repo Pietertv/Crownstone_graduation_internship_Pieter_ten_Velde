@@ -1,0 +1,169 @@
+\subsection{Test setup}
+\label{sec:Test_setup}
+In order to test a requirement there needs to be a test setup that can test the finished project properly. The test setup includes the room in which the requirements are tested and the equipment that is necessary.
+
+\subsubsection{Test room}
+The test room will be the room at Crownstone. In which the the necessary equipment is located.
+
+\subsubsection{Equipment}
+
+To test the completed product the necessary equipment is listed below
+
+\begin{itemize}
+    \item An adapter
+    \item A laptop to read out the results
+    \item A multi meter to test different voltages
+\end{itemize}
+
+\newAcceptanceTest{\reqRef{REQ1.1},\reqRef{REQ1.2} and \reqRef{REQ1.3}}
+{See \nameref{sec:Test_setup}}
+{A package of data}
+{The same package of data on another device}
+{\begin{itemize}
+    \item The package can be received with a range of 20 meters.
+    \item The data package needs to be the same
+    \item Bluetooth and WiFi needs to be used in order to send the package
+\end{itemize}}
+{\begin{enumerate}
+    \item Get a device(s) that can be connected to with WiFi and/or Bluetooth
+    \item Put the router on.
+    \item Make sure the WiFi device is connected to the same WiFi  network
+    \item Make sure the Bluetooth device is connected to the router
+    \item Send a package through the device with WiFi
+    \item Check if the package arrived correctly
+    \item Now do the same with Bluetooth
+    \item Check the maximum range of the Bluetooth and WiFi and fill it in below.
+\end{enumerate}
+
+\begin{tabular}{c|c}
+    Communication type & Range \\\hline
+    \multirow{2}{3em}{WiFi} & \\& \underline{\hspace{3cm}}\\
+    \multirow{2}{4em}{Bluetooth} &\\& \underline{\hspace{3cm}}\\
+\end{tabular}}
+
+\newAcceptanceTest{\reqRef{REQ2.1}, \reqRef{REQ1.5}, \reqRef{REQ1.8}, \reqRef{REQ1.4}}
+{See \nameref{sec:Test_setup}}
+{A package send from a laptop with an Ethernet cable}
+{The same package at the router}
+{\begin{itemize}
+    \item The package needs to be delivered through Ethernet
+    \item The package needs to be the same
+\end{itemize}}
+{\begin{enumerate}
+    \item Start up the laptop and the router
+    \item Connect an Ethernet cable to the router
+    \item Ready the package
+    \item send the package
+    \item Check if the package is the correct
+    \item Do the same for the modular connection
+    \item Connect a wrong rs485 connection to the Ethernet modular connection
+    \item Check if the system rejects the rs485
+\end{enumerate}}
+
+\newAcceptanceTest{\reqRef{REQ2.2}, \reqRef{REQ1.7}}
+{See \nameref{sec:Test_setup}}
+{A smart meter measurement}
+{Smart meter data}
+{\begin{itemize}
+    \item Correct measurement
+    \item Use different smart meters
+\end{itemize}}
+{\begin{enumerate}
+    \item Connect the smart meter to the router
+    \item Make sure the smart meter is on
+    \item Activate the router
+    \item Read out the data that was sent from the smart meter to the router.
+    \item Check with another device if the data is read correct
+    \item Do the same for the modular connection
+\end{enumerate}}
+
+\newAcceptanceTest{\reqRef{REQ2.3}, \reqRef{REQ1.6}}
+{See \nameref{sec:Test_setup}}
+{Data from the router}
+{The received data at a laptop}
+{\begin{itemize}
+    \item The data has been sent correctly
+    \item The data is correct
+\end{itemize}}
+{\begin{enumerate}
+    \item Connect the router to the laptop via the rs485 protocol.
+    \item Send the data
+    \item Check if the data has been successfully transferred
+    \item Do the same for the modular connection
+\end{enumerate}}
+
+\newAcceptanceTest{\reqRef{REQ2.4}, \reqRef{REQ2.5}}
+{See \nameref{sec:Test_setup}}
+{Micro-USB connected to a laptop flashing code}
+{Working microcontroller}
+{\begin{itemize}
+    \item The microcontroller needs to be flashed
+    \item The USB connection works
+\end{itemize}}
+{\begin{enumerate}
+    \item Activate the router
+    \item Ready the laptop
+    \item Flash code with a command to the microcontroller
+    \item Check if the USB port works
+\end{enumerate}}
+
+\newAcceptanceTest{\reqRef{REQ3.1}, \reqRef{REQ3.2}, \reqRef{REQ3.3}, \reqRef{REQ3.4}, \reqRef{REQ3.5}}
+{See \nameref{sec:Test_setup}}
+{\begin{itemize}
+    \item User input
+\end{itemize}}
+{\begin{itemize}
+    \item A sound
+    \item Visual status router
+    \item System reset
+    \item System turns on/off
+\end{itemize}}
+{\begin{itemize}
+    \item The system has to reset
+    \item The LED's need to turn on for the correct statusses.
+\end{itemize}}
+{\begin{enumerate}
+    \item Turn the router on by pushing the button.
+    \item See if the light turns on to display the on status.
+    \item Press the reset button
+    \item See if the router resets.
+    \item Attach a module wrongly
+    \item See if the Speaker gives of a sound
+\end{enumerate}}
+
+\newAcceptanceTest{\reqRef{REQ4.1} and \reqRef{REQ4.2} and \reqRef{REQ4.3}}
+{See \nameref{sec:Test_setup}}
+{\begin{itemize}
+    \item 5V
+    \item More than 5V
+\end{itemize}}
+{\begin{itemize}
+    \item The microcontroller works
+    \item The Router will shut down
+\end{itemize}}
+{\begin{itemize}
+    \item When a too high current is put in the system needs to shut down.
+    \item The 5V needs to transform into 3.3V
+\end{itemize}}
+{\begin{enumerate}
+    \item Put the 5V into the router
+    \item Check if 5V is measured with a multimeter
+    \item Check if the 5V is transformed into 3.3V to power the microcontroller
+    \item Before putting in more make sure you can pull out the supply if it doesn't work.
+    \item Put in more than 5V
+    \item Check if the system shut down
+\end{enumerate}}
+ 
+\newAcceptanceTest{\reqRef{REQ5.1}, \reqRef{REQ5.2}}
+{See \nameref{sec:Test_setup}}
+{Storage data}
+{Storage data}
+{\begin{itemize}
+    \item The data needs to be stored in an outside source
+\end{itemize}}
+{\begin{enumerate}
+    \item Startup the router
+    \item Send a packet to router
+    \item Make sure the packet is stored in the external storage
+    \item Check if the packet is stored correctly
+\end{enumerate}}

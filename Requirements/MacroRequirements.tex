@@ -1,0 +1,52 @@
+% Create new requirements
+\newcommand{\newRequirement}[3]{
+    % Params: Number, MoSCoW, Description
+    \subparagraph{REQ#1[#2]}
+    \label{req:REQ#1}
+    
+    \StrSubstitute{#1}{.}{}[\temp]
+    %\newcommand{\temp}{#3}
+    
+    \def \reqstring {#3}
+    
+    \hfill\begin{minipage}{0.8\linewidth}
+        #3
+        %\reqstring
+    \end{minipage}
+}
+% Create new Non Functional requirements
+\newcommand{\newNFRequirement}[3]{
+    % Params: Number, MoSCoW, Description
+
+    \subparagraph{NFREQ#1[#2]}
+    \label{req:NFREQ#1}
+    \hfill\begin{minipage}{0.8\linewidth}
+        #3
+    \end{minipage}
+}
+% Reference to a requirement. 
+\newcommand{\reqRef}[1]{
+    %#1: requirement number
+    \nameref{req:#1}
+}
+%Acceptance testing
+\newcounter{acceptanceTestCounter}
+\newcommand{\newAcceptanceTest}[6]{
+    % Params: #1: Requirement(s), #2: Conditions, #3: Test Input, #4: Test output, #5: criteria, #6: test procedure, #7: Test succesful, #8: Notes
+    \stepcounter{acceptanceTestCounter}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|p{0.8\linewidth}|}
+            \hline
+            \bf Requirement(s) & #1 \\\hline
+            \bf Conditions    & #2 \\\hline
+            \bf Test input    & #3 \\\hline
+            \bf Test output & #4 \\\hline
+            \bf Criterion       & #5 \\\hline
+            \bf Test procedure  & #6 \\\hline
+            % \bf Test geslaagd  & \testSuccessful{#7} #8 \\\hline
+        \end{tabular}
+        \caption{Acceptatie test case \arabic{acceptanceTestCounter}}
+    \end{table}
+}
+

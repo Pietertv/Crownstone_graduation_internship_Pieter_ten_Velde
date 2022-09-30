@@ -1,0 +1,38 @@
+% Command to make new intergration specification for architecture
+\newcommand{\newISPEC}[5]{
+    % id, flow naam, vertrek, bestemming,  beschrijving
+    \subparagraph{I-SPEC#1 [#3 $\rightarrow$ #4]}
+    \label{ispec:#1}
+        
+    %\hfill\begin{minipage}{0.8\linewidth}
+    \noindent \textbf{#2:} #5
+    %\end{minipage}
+}
+
+
+% Reference to an ISPEC. 
+\newcommand{\ispecRef}[1]{
+    %#1: ISPEC number
+    \nameref{ispec:#1}
+}
+
+% Integratie test
+\newcounter{integratieCounter}
+\newcommand{\newIntegratieTest}[9]{
+    \stepcounter{integratieCounter}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|p{0.8\linewidth}|}
+            \hline
+            \bf Voorgaande test:            & #1 \\\hline
+            \bf Volgende test:              & #2 \\\hline
+            \bf Geteste deelsystemen:       & #3 \\\hline
+            \bf Testvoorbereiding:          & #4 \\\hline
+            \bf Interface specificaties:    & #5 \\\hline
+            \bf Input test:                 & #6 \\\hline
+            \bf Output test:                & #7 \\\hline
+            \bf Overige voorwaarden:        & #8 \\\hline
+        \end{tabular}
+        \caption{#9}
+    \end{table}
+}
